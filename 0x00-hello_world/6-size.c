@@ -4,19 +4,12 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void)Size is not grandeur, and territory does not make a nation
+int main(void)
 {
-	int a;
-	long int b;
-	long long int c;
-	char d;
-	float f;
-
-
-	printf("size of a char %1u byte(s)\n", (unsigned long)sizeof(d));
-	printf("size of an int: %1u byte(s)\n", (unsigned long)sizeof(a));
-	printf("size of a long int: %1u byte(s)\n", (unsigned long)sizeof(b));
-	printf("size of a long long int: %1u byte(s)\n", (unsigned long)sizeof(c));
-	printf("size of a float: %1u byte(s)\n", (unsigned long)sizeof(f));
+	printf("size of a char: %lu byte(s)\n", sizeof(char));
+	printf("size of an int: %lu byte(s)\n", sizeof(int));
+	printf("size of a long int: %lu byte(s)\n", sizeof(long));
+	printf("size of a long long int: %lu byte(s)\n", sizeof(long long));
+	printf("size of a float: %lu byte(s)\n", sizeof(float));
 	return (0);
 }
