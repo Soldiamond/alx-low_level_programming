@@ -1,24 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - func
+ * print_alphabet_x10 - prints the lowercase alphabet 10 times on new lines
  *
- * Description - func is print
- *
- * Return - 0
+ * Return: void
  */
-void print_alphabet_10x(void)
+
+void print_alphabet_x10(void)
 {
-int b = 0;
-while (b < 10)
-{
-char a = 'a';
-while (a <= 'z')
-{
-_putchar(a);
-a++;
-}
-_putchar('\n');
-b++;
-}
+	char c = 'a';
+	int i, j;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j < 26; j++)
+		{
+			_putchar(c + j);
+		}
+		_putchar(10);
+	}
 }
